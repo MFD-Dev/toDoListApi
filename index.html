@@ -1,0 +1,40 @@
+<!-- Project 9: Add a new function to your ToDos app that initially loads ToDos data from an API.
+
+Requirements:
+-Create a Github repository for this project. 
+-Update the ToDos app from the previous project to initially load the localStorage of ToDos by fetching the ToDos resources in the JSONPlaceholder API.
+-Use the Axios API. On the page load, if the Todos array is empty, load it with the Todos from this API. Otherwise, if it's not empty, it should load what's currently stored.
+
+Resources: Axios tutorial (you'll be using the CDN) to help you get familiar.  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo</h1>
+
+        <form class="todo-form">
+            <input type="text" class="todo-input" placeholder="Add a ToDo">
+            <button type="submit" class="add-button" >Add</button>
+        </form>
+        <ul class="todo-items">
+            <!-- dummy item -->
+        <li class="checkbox" type="checkbox" >
+            Go to Gym
+            <button class="delete-button" >X</button>
+        </li>
+        </ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
